@@ -80,6 +80,7 @@ list *create(list *head)
        head->next->next=reversepair(head->next->next);
        return head;
    }
+
  }
 
 
