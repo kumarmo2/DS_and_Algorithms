@@ -13,7 +13,7 @@ struct node
 {
     int data;
     struct node *right,*left;
-};
+};;
 
 // A queue node
 struct Queue
@@ -111,12 +111,12 @@ void insert(struct node **root, int data, struct Queue* queue)
         // get the front node of the queue.
         struct node* front = getFront(queue);
 
-        // If the left child of this front node doesn’t exist, set the
+        // If the left child of this front node doesnâ€™t exist, set the
         // left child as the new node
         if (!front->left)
             front->left = temp;
 
-        // If the right child of this front node doesn’t exist, set the
+        // If the right child of this front node doesnâ€™t exist, set the
         // right child as the new node
         else if (!front->right)
             front->right = temp;
